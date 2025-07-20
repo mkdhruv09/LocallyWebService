@@ -25,7 +25,7 @@ fun main() {
         password = "postgres"
     )*/
     Database.connect(
-        url = "postgresql://ktor_user:bto3VIa1DczvLNMkOFj1EcMDVlILSwmE@dpg-d1ulhgs9c44c73d4f8e0-a/ktor_demo",
+        url = "jdbc:postgresql://ktor_user:bto3VIa1DczvLNMkOFj1EcMDVlILSwmE@dpg-d1ulhgs9c44c73d4f8e0-a/ktor_demo",
         driver = "org.postgresql.Driver",
         user = "ktor_user",
         password = "bto3VIa1DczvLNMkOFj1EcMDVlILSwmE"
