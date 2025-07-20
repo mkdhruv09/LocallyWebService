@@ -18,8 +18,14 @@ import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 fun main() {
     // Connect to PostgreSQL
 
-    Database.connect(
+    /*Database.connect(
         url = "jdbc:postgresql://localhost:5432/ktor_demo",
+        driver = "org.postgresql.Driver",
+        user = "postgres",
+        password = "postgres"
+    )*/
+    Database.connect(
+        url = "jdbc:postgresql://host.docker.internal:5432/ktor_demo",
         driver = "org.postgresql.Driver",
         user = "postgres",
         password = "postgres"
