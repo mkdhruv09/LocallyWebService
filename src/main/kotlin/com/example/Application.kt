@@ -25,11 +25,17 @@ fun main() {
         password = "postgres"
     )*/
     Database.connect(
-        url = "jdbc:postgresql://ktor_user:bto3VIa1DczvLNMkOFj1EcMDVlILSwmE@dpg-d1ulhgs9c44c73d4f8e0-a/ktor_demo",
+        url = "jdbc:postgresql://dpg-d1ulhgs9c44c73d4f8e0-a.render.com:5432/ktor_demo",
         driver = "org.postgresql.Driver",
         user = "ktor_user",
         password = "bto3VIa1DczvLNMkOFj1EcMDVlILSwmE"
     )
+   /* Database.connect(
+        url = "jdbc:postgresql://ktor_user:bto3VIa1DczvLNMkOFj1EcMDVlILSwmE@dpg-d1ulhgs9c44c73d4f8e0-a.oregon-postgres.render.com/ktor_demo",
+        driver = "org.postgresql.Driver",
+        user = "ktor_user",
+        password = "bto3VIa1DczvLNMkOFj1EcMDVlILSwmE"
+    )*/
 
     transaction {
         create(Users)
