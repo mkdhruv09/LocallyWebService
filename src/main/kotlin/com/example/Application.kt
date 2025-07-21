@@ -24,8 +24,10 @@ fun main() {
         user = "postgres",
         password = "postgres"
     )*/
+    val url = "jdbc:postgresql://dpg-d1ulhgs9c44c73d4f8e0-a.render.com:5432/ktor_demo?sslmode=require"
+
     Database.connect(
-        url = "jdbc:postgresql://ktor_user:bto3VIa1DczvLNMkOFj1EcMDVlILSwmE@dpg-d1ulhgs9c44c73d4f8e0-a/ktor_demo",
+        url = url,
         driver = "org.postgresql.Driver",
         user = "ktor_user",
         password = "bto3VIa1DczvLNMkOFj1EcMDVlILSwmE"
